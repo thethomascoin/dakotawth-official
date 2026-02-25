@@ -5,6 +5,7 @@ import { About } from './components/sections/About';
 import { Music } from './components/sections/Music';
 import { Social } from './components/sections/Social';
 import { ScrollFrames } from './components/animations/ScrollFrames';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
     return (
@@ -26,6 +27,9 @@ function App() {
                 </main>
                 <Footer />
             </div>
+            
+            {/* Vercel Speed Insights */}
+            <SpeedInsights />
         </div>
     );
 }
